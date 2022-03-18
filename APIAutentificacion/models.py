@@ -16,9 +16,4 @@ class Usuario(models.Model):
 
     def get_contrasenia(self):
         return self.contrasenia
-    
-    def set_token(self,new_token):
-        self.token=new_token
 
-    def get_token(self):
-        return self.token

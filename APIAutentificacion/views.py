@@ -1,7 +1,3 @@
-from email import header
-from email.mime import application
-import mimetypes
-import re
 from telnetlib import STATUS
 from wsgiref import headers
 from django.shortcuts import render
@@ -45,3 +41,5 @@ class AutenticateUser(View):
             else:
                 resp={'error_menssage':"Peticion invalida"}
                 return JsonResponse(resp,safe=False,status=400)
+
+                
